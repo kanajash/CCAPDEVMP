@@ -1,0 +1,122 @@
+[
+   {
+      "_id": {
+         "$oid": "64adacdc0fc3b3940284043b"
+      },
+      "name": "Desk 1 - Aurora",
+      "imageurls": [
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_3280-1200x800-1.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_1055-e1567544225664-1200x885-1.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_0935-e1565205309174-1200x1200-1.webp"
+      ],
+      "rentperday": 150,
+      "type": "Desk",
+      "maxcount": 4,
+      "phonenumber": 123456789,
+      "currentbookings": [
+         {
+            "bookingid": {
+               "$oid": "67b04d71c3c6c6c67ff88073"
+            },
+            "fromdate": "16-02-2025",
+            "todate": "17-02-2025",
+            "userid": "67b04cc0c3c6c6c67ff8805c",
+            "status": "booked"
+         }
+      ],
+      "description": "A comfortable shared desk space with ergonomic seating.",
+      "__v": 39,
+      "imageUrls": [],
+      "updatedAt": {
+         "$date": "2025-02-15T08:16:49.916Z"
+      }
+   },
+   {
+      "_id": {
+         "$oid": "64adacdc0fc3b3940284043c"
+      },
+      "name": "Desk 2- Snow White",
+    "imageurls": [
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_3280-1200x800-1.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_1055-e1567544225664-1200x885-1.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/IMG_0935-e1565205309174-1200x1200-1.webp"
+      ],
+      "rentperday": 150,
+      "type": "Desk",
+      "maxcount": 4,
+      "phonenumber": 923014567890,
+      "currentbookings": [],
+      "description": "A cozy desk setup with high-speed Wi-Fi.",
+      "__v": 35,
+      "imageUrls": [],
+      "updatedAt": {
+         "$date": "2025-01-31T15:04:33.306Z"
+      }
+   },
+   {
+      "_id": {
+         "$oid": "64adacdc0fc3b3940284043e"
+      },
+      "name": "Office 1 - Mulan",
+      "imageurls": [
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office11.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office12.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office4.webp"
+      ],
+      "rentperday": 600,
+      "type": "Office",
+      "maxcount": 8,
+      "phonenumber": 923337654321,
+      "currentbookings": [],
+      "description": "\"A premium private office for up to 8 people.",
+      "__v": 5,
+      "imageUrls": [],
+      "updatedAt": {
+         "$date": "2025-02-15T08:15:50.806Z"
+      }
+   },
+   {
+      "_id": {
+         "$oid": "64adacdc0fc3b3940284043a"
+      },
+      "name": "Office 2 - Elsa",
+      "imageurls": [
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office11.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office12.webp",
+         "https://thecommondesk.com/wp-content/uploads/2022/05/pr-office4.webp"
+      ],
+      "rentperday": 700,
+      "type": "Office",
+      "maxcount": 10,
+      "phonenumber": 923229876543,
+      "currentbookings": [],
+      "description": "A quiet private office with modern workspaces.",
+      "__v": 5,
+      "imageUrls": [],
+      "updatedAt": {
+         "$date": "2025-02-15T04:54:47.128Z"
+      }
+   },
+   {
+      "_id": {
+         "$oid": "64adacdc0fc3b3940284043d"
+      },
+      "name": "Meeting 1 - Queen Fyangie",
+      "imageurls": [
+         "https://thecommondesk.com/wp-content/uploads/2024/03/shoootin-photo-5-1-scaled.webp",
+         "https://thecommondesk.com/wp-content/uploads/2024/03/603-Munger-Ave-100-Dallas-4-scaled.webp",
+         "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+      ],
+      "rentperday": 1200,
+      "type": "Meeting",
+      "maxcount": 20,
+      "phonenumber": 923151234567,
+      "currentbookings": [],
+      "description": "A spacious and cold meeting room with a large screen and whiteboard.",
+      "__v": 4,
+      "imageUrls": [],
+      "updatedAt": {
+         "$date": "2024-11-24T16:56:05.320Z"
+      }
+   }
+]

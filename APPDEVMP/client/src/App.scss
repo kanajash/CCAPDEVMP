@@ -1,0 +1,74 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./scss/var";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+$back-color: grey;
+$text-color: pink;
+
+nav {
+  background-color: $back-color !important; 
+
+  .navbar-brand {
+    color: $text-color;
+    &:hover {
+      color: wheat;
+    }
+  }
+
+  ul {
+    li {
+      .nav-link {
+        color: $text-color;
+        &:hover {
+          color: wheat;
+        }
+      }
+    }
+  }
+}
+
+
+
+.room-box{
+.smallimg{
+  height: 200px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+h1 {
+  font-size: 20px !important;
+}
+
+.btn{
+  color: $text-color;
+  box-shadow: none !important;
+}
+.bs{
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+}
+
+
+.bs{
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+
+
+input{
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 1px solid black !important;
+}
