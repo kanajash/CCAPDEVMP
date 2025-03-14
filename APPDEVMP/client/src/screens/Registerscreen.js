@@ -73,9 +73,12 @@ else{
 <div className='bs border'>
     <h1 className='text-center'>Register</h1>
     <input   type='text' className='form-control' placeholder='Name' value={name} onChange={(e)=>{setname(e.target.value)}}/>
-    <input   type='text' className='form-control' placeholder='Email'  value={email} onChange={(e)=>{setemail(e.target.value)}}/>
-    <input   type='text' className='form-control' placeholder='Password'  value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
-    <input   type='text' className='form-control' placeholder='Confirm Password'  value={cpassword} onChange={(e)=>{setcpassword(e.target.value)}}/>
+    <input   type='email' className='form-control' placeholder='Email'  value={email} onChange={(e)=>{setemail(e.target.value)}}/>
+   
+
+    { /*show password*/ }
+    <input   type='password' className='form-control' placeholder='Password'  value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
+    <input   type='password' className='form-control' placeholder='Confirm Password'  value={cpassword} onChange={(e)=>{setcpassword(e.target.value)}}/>
     <button className='btn btn-dark mt-3' onClick={register}>Register</button>
 </div>
 
