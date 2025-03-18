@@ -30,6 +30,7 @@ function Room({ room,fromDate,toDate }) {
                          {(fromDate && toDate) &&   <Link to={`/book/${room._id}/${fromDate}/${toDate}`}>
                         <button className='btn btn-dark m-2 '>Book Now</button>
                         </Link>}
+                        
                         {/* Path Defined for Room and Dates */}
                       
                         <button className='btn btn-dark ' onClick={handleShow}>View Details</button>

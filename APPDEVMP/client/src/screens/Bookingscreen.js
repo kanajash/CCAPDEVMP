@@ -118,7 +118,7 @@ function Bookingscreen() {
                                 ComponentClass="div"
                                 name='Checkout'
                                 currency='PHP'
-                                amount={totalamount*10}
+                                amount={totalamount*100}
                                 token={onToken}
                                 stripeKey="pk_test_51P2Aq0IaFe5goczal8jGVHYnaMHI5EsMOt2KkgndUjxYkWecXALgJIe5b29TgntHrOG0npAM0KZkV9mCBGGYHWT700eq85lFeG"
                             >

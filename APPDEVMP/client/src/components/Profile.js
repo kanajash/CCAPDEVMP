@@ -12,6 +12,7 @@ function Profile({ parsedUser }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
   const id = parsedUser._id
+  
   const updateHandler = async (e) => {
     e.preventDefault()
     if (password !== cPassword) {
