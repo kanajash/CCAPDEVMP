@@ -45,7 +45,7 @@ function Loginscreen() {
 
             {/* Email Input */}
             <input
-              type="text"
+              type="email"
               className="form-control"
               placeholder="Email"
               value={email}

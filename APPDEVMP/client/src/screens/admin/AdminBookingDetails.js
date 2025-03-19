@@ -6,7 +6,7 @@ import Loader from '../../components/Loader';
 import Error from '../../components/Error';
 
 function AdminBookingDetails() {
-    const [booking, setBooking] = useState({}); // ✅ Changed from [] to {}
+    const [booking, setBooking] = useState({}); // 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const { id } = useParams();
@@ -16,7 +16,7 @@ function AdminBookingDetails() {
             try {
                 setLoading(true);
                 const res = await axios.get(`http://localhost:5000/api/bookings/${id}`);
-                console.log("Fetched Booking Data:", res.data); // ✅ Debugging log
+                console.log("Fetched Booking Data:", res.data); // Debugging log
                 setBooking(res.data); // Ensure it's an object
                 setLoading(false);
             } catch (error) {
