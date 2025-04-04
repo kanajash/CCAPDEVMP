@@ -17,7 +17,7 @@ function AdminRooms() {
     const getRooms = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("https://backend-k86c.onrender.com/")
+      const res = await axios.post("https://backend-k86c.onrender.com/api/rooms/create")
       setRooms(res.data)
       setLoading(false)
     } catch (error) {
@@ -33,7 +33,7 @@ function AdminRooms() {
     try {
         const confirm = window.confirm("Are you sure you want to delete room?")
         if(confirm){
-            await axios.delete(`http://localhost:5000/api/rooms/${id}`)
+            await axios.delete(`https://backend-k86c.onrender.com/api/rooms/${id}`)
             toast.success("Room Deleted!")
             window.location.reload()
         }
@@ -45,7 +45,7 @@ function AdminRooms() {
 
   const createRoom = async ()=>{
     try {
-        await axios.post("http://localhost:5000/api/rooms/create")
+        await axios.post("https://backend-k86c.onrender.com/api/rooms/create")
         toast.success("Created Successfully!")
         window.location.reload()
     } catch (error) {
