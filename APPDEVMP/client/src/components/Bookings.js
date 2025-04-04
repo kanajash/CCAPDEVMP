@@ -11,7 +11,7 @@ function Bookings({ userBookings, loading, error }) {
         try {
             const confirm = window.confirm("Are you sure you want to cancel?")
             if (confirm) {
-                await axios.delete(`http://localhost:5000/api/bookings/${id}`)
+                await axios.delete(`https://backend-k86c.onrender.com/api/bookings/${id}`)
                 toast.success("Booking Cancelled Successfully!")
                 window.location.reload()
             }
