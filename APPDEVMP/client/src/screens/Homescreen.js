@@ -25,7 +25,7 @@ function Homescreen() {
         const myFunction = async () => {
             try {
                 setloading(true);
-                const data = (await axios.get("http://localhost:5000/api/rooms/getallrooms")).data;
+                const data = (await axios.get("https://backend-k86c.onrender.com/)).data;
                 setrooms(data)
                 setDuplicateRooms(data)
                 setloading(false)
