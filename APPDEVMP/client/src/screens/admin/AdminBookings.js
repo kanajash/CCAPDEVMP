@@ -14,7 +14,7 @@ function AdminBookings() {
     const getBookings = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("https://backend-k86c.onrender.com/")
+      const res = await axios.get("https://backend-k86c.onrender.com/api/bookings/")
       setBookings(res.data)
       setLoading(false)
     } catch (error) {
