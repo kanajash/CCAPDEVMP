@@ -19,7 +19,7 @@ function AdminUser() {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = (await axios.get(`https://backend-k86c.onrender.com/`)).data
+                const res = (await axios.get(`https://backend-k86c.onrender.com/api/rooms/${id}`)).data
                 setUsername(res.name)
                 setEmail(res.email)
                 setIsAdmin(res.isAdmin)
@@ -41,7 +41,12 @@ function AdminUser() {
         }
         try {
             setLoading(true)
-            await axios.put(`http://localhost:5000/api/users/${id}`, { name: username, email, password,isAdmin })
+        await axios.put(`https://backend-k86c.onrender.com/api/users/${id}`, {
+          name: username,
+          email,
+          password,
+          isAdmin
+        });
             toast.success("Updated User!")
             setLoading(false)
             window.location.reload()
