@@ -17,7 +17,7 @@ function AdminRooms() {
     const getRooms = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("http://localhost:5000/api/rooms/getallrooms")
+      const res = await axios.get("https://backend-k86c.onrender.com/")
       setRooms(res.data)
       setLoading(false)
     } catch (error) {
