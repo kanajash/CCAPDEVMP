@@ -20,7 +20,7 @@ function AdminRoom() {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = (await axios.get(`http://localhost:5000/api/rooms/${id}`)).data
+                const res = (await axios.get(`https://backend-k86c.onrender.com/`)).data
                 setName(res.name)
                 setDescription(res.description)
                 setType(res.type)
