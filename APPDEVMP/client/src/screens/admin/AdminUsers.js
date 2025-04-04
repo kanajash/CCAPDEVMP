@@ -4,7 +4,8 @@ import { Container, Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loader from '../../components/Loader';
 import Error from '../../components/Error';
-import { FaPenToSquare, FaTrash, FaTimes, FaCheck } from 'react-icons/fa6';
+import { FaPenToSquare, FaTrash } from 'react-icons/fa6';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
 
 function AdminUsers() {
