@@ -20,7 +20,7 @@ function Profile({ parsedUser }) {
     }
     try {
       setLoading(true)
-      const res = await axios.put(`http://localhost:5000/api/users/${id}`, { name: username, email, password })
+      const res = await axios.put(`https://backend-k86c.onrender.com/`, { name: username, email, password })
       localStorage.setItem("currentUser", JSON.stringify(res.data))
       toast.success("Updated")
       setLoading(false)
