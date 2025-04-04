@@ -27,7 +27,7 @@ function Bookingscreen() {
         const myFunction = async () => {
             try {
                 setloading(true);
-                const data = (await axios.post("https://backend-k86c.onrender.com/", { roomid })).data;
+                const data = (await axios.post("https://backend-k86c.onrender.com/api/rooms/getroombyid", { roomid })).data;
                 setroom(data)
                 setTotalAmount(data.rentperday * totaldays)
                 setloading(false)
@@ -62,7 +62,7 @@ function Bookingscreen() {
         try {
             // const result = await axios.post('/api/bookings/bookroom',bookingDetails)
             setloading(true)
-            await axios.post('http://localhost:5000/api/bookings/bookroom', bookingDetails)
+            await axios.post("https://backend-k86c.onrender.com/api/bookings/bookroom", bookingDetails);
             setloading(false)
             Swal.fire("Congratulations", "Your Room is Booked Successfully!","success").then(()=>{
                 window.location.href = "/bookings"
