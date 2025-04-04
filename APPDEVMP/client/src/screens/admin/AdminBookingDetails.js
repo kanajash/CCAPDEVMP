@@ -15,7 +15,7 @@ function AdminBookingDetails() {
         const getBooking = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get(`https://backend-k86c.onrender.com/`);
+                const res = await axios.get(`https://backend-k86c.onrender.com/api/bookings/${id}`);
                 console.log("Fetched Booking Data:", res.data); // Debugging log
                 setBooking(res.data); // Ensure it's an object
                 setLoading(false);
