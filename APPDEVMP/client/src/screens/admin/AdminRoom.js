@@ -20,7 +20,7 @@ function AdminRoom() {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = (await axios.get(`https://backend-k86c.onrender.com/`)).data
+                const res = (await axios.get(`https://backend-k86c.onrender.com/api/rooms/${id}`)).data;
                 setName(res.name)
                 setDescription(res.description)
                 setType(res.type)
@@ -43,7 +43,7 @@ function AdminRoom() {
         
         try {
             setLoading(true)
-            await axios.put(`http://localhost:5000/api/rooms/${id}`, {
+                await axios.put(`https://backend-k86c.onrender.com/api/rooms/${id}`, 
                 name,description,type,rentperday,phonenumber,maxcount
             })
             toast.success("Updated Room!")
