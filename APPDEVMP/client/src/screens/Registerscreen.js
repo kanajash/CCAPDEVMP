@@ -29,12 +29,13 @@ function Registerscreen() {
         cpassword,
       };
 
-      try {
+        try {
         setloading(true);
         const result = await axios.post(
-          "http://localhost:5000/api/users/register",
-          user
+        "https://backend-k86c.onrender.com/api/users/register",
+        user
         ).data;
+
         setloading(false);
         setsuccess(true);
 
