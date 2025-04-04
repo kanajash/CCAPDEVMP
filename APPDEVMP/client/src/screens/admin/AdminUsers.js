@@ -17,7 +17,7 @@ function AdminUsers() {
         const getUsers = async () => {
             try {
                 setLoading(true)
-                const res = await axios.get("http://localhost:5000/api/users/")
+                const res = await axios.get("https://backend-k86c.onrender.com/")
                 setUsers(res.data)
                 setLoading(false)
             } catch (error) {
