@@ -20,9 +20,8 @@ function Loginscreen() {
 
     try {
       setloading(true);
-      const result = await (
-        await axios.post("https://backend-k86c.onrender.com/api/users/login", user);
-      ).data;
+      const response = await axios.post("https://backend-k86c.onrender.com/api/users/login", user);
+      const result = response.data;
       setloading(false);
       localStorage.setItem("currentUser", JSON.stringify(result));
       window.location.href = "/";
@@ -55,7 +54,7 @@ function Loginscreen() {
             {/* Password Input */}
             <input
               type={showPassword ? "text" : "password"}
-              className="form-control"
+              className="form-control mt-2"
               placeholder="Password"
               value={password}
               onChange={(e) => setpassword(e.target.value)}
@@ -75,7 +74,7 @@ function Loginscreen() {
             </div>
 
             {/* Login Button */}
-            <button className="btn btn-dark mt-3" onClick={login}>
+            <button className="btn btn-dark mt-3 w-100" onClick={login}>
               Login
             </button>
           </div>
