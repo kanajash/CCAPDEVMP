@@ -17,7 +17,7 @@ function AdminUsers() {
         const getUsers = async () => {
             try {
                 setLoading(true)
-                const res = await axios.get("https://backend-k86c.onrender.com/")
+                const res = await axios.get("https://backend-k86c.onrender.com/api/users/");)
                 setUsers(res.data)
                 setLoading(false)
             } catch (error) {
@@ -32,7 +32,7 @@ function AdminUsers() {
         try {
             const confirm = window.confirm("Are you sure yo want to delete?")
           if(confirm){
-            await axios.delete(`http://localhost:5000/api/users/${id}`)
+            await axios.delete(`https://backend-k86c.onrender.com/api/users/${id}`);
             toast.success("User Deleted Successfully!")
             window.location.reload()
           }
