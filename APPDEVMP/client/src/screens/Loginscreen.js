@@ -21,7 +21,7 @@ function Loginscreen() {
     try {
       setloading(true);
       const result = await (
-        await axios.post("http://localhost:5000/api/users/login", user)
+        await axios.post("https://backend-k86c.onrender.com/api/users/login", user);
       ).data;
       setloading(false);
       localStorage.setItem("currentUser", JSON.stringify(result));
